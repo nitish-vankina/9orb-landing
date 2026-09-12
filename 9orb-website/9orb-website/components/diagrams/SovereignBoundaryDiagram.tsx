@@ -12,7 +12,7 @@ function Block({
   tone: "device" | "boundary" | "ninorb";
 }) {
   const toneClasses = {
-    device: "border-accent/40 bg-accent-soft/40",
+    device: "border-ink-100/70 bg-base-800",
     boundary: "border-base-700 bg-base-900/60",
     ninorb: "border-base-700 bg-base-900",
   }[tone];
@@ -38,8 +38,8 @@ function Arrow({ label }: { label: string }) {
   return (
     <div className="flex flex-col items-center gap-1 py-2">
       <svg width="16" height="28" viewBox="0 0 16 28" fill="none" aria-hidden="true">
-        <line x1="8" y1="0" x2="8" y2="20" stroke="#3E434C" strokeWidth="1.4" />
-        <path d="M2 18l6 8 6-8" stroke="#3E434C" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="8" y1="0" x2="8" y2="20" stroke="#48484D" strokeWidth="1.4" />
+        <path d="M2 18l6 8 6-8" stroke="#48484D" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
       <span className="text-center text-[11px] leading-tight text-ink-500">{label}</span>
     </div>

@@ -8,33 +8,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Pure black/white/gray. No hue anywhere in the system —
+        // status and emphasis are carried by weight, opacity, and
+        // border, never by color.
         base: {
-          950: "#08090B",
-          900: "#0C0D10",
-          850: "#101215",
-          800: "#15171B",
-          700: "#1D2025",
-          600: "#2A2E35",
-          500: "#3E434C",
+          950: "#0A0A0B",
+          900: "#0E0E10",
+          850: "#131315",
+          800: "#19191C",
+          700: "#232326",
+          600: "#323236",
+          500: "#48484D",
         },
         ink: {
-          50: "#F7F8F9",
-          100: "#ECEDEF",
-          200: "#C9CCD1",
-          300: "#9BA0A9",
-          400: "#767C87",
-          500: "#5B6068",
-        },
-        accent: {
-          DEFAULT: "#4C7BFF",
-          dim: "#3A5FCC",
-          bright: "#7AA0FF",
-          soft: "#1A2440",
-        },
-        signal: {
-          good: "#3DD68C",
-          warn: "#E8A33D",
-          bad: "#E5484D",
+          50: "#FAFAFA",
+          100: "#EDEDEE",
+          200: "#CBCBCE",
+          300: "#9C9CA2",
+          400: "#77777D",
+          500: "#5A5A60",
         },
       },
       fontFamily: {
@@ -44,10 +36,6 @@ const config: Config = {
       maxWidth: {
         content: "1200px",
       },
-      backgroundImage: {
-        "grid-faint":
-          "linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px)",
-      },
       keyframes: {
         "fade-up": {
           "0%": { opacity: "0", transform: "translateY(8px)" },
@@ -55,22 +43,12 @@ const config: Config = {
         },
         "pulse-soft": {
           "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.55" },
-        },
-        "dash": {
-          "0%": { strokeDashoffset: "240" },
-          "100%": { strokeDashoffset: "0" },
-        },
-        "drift": {
-          "0%, 100%": { transform: "translate(0,0)" },
-          "50%": { transform: "translate(6px,-6px)" },
+          "50%": { opacity: "0.4" },
         },
       },
       animation: {
         "fade-up": "fade-up 0.6s ease-out both",
         "pulse-soft": "pulse-soft 2.4s ease-in-out infinite",
-        "dash": "dash 6s linear infinite",
-        "drift": "drift 8s ease-in-out infinite",
       },
     },
   },

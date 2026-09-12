@@ -12,7 +12,7 @@ export function FeatureCard({
   return (
     <div className="group rounded-lg border border-base-800 bg-base-900/40 p-5 transition-colors duration-150 hover:border-base-600 hover:bg-base-900">
       {icon ? (
-        <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-md border border-base-700 text-accent-bright">
+        <div className="mb-3 flex h-8 w-8 items-center justify-center rounded-md border border-base-700 text-ink-200">
           {icon}
         </div>
       ) : null}

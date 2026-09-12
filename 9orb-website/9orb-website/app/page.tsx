@@ -98,7 +98,7 @@ export default function HomePage() {
                 href={area.href}
                 className={`group flex flex-col justify-between rounded-xl border p-7 transition-colors duration-150 ${
                   area.emphasized
-                    ? "border-accent/40 bg-accent-soft/25 hover:border-accent/70"
+                    ? "border-ink-100/50 bg-base-800 hover:border-white"
                     : "border-base-800 bg-base-900/30 hover:border-base-600"
                 }`}
               >
@@ -109,7 +109,7 @@ export default function HomePage() {
                   <h3 className="mt-3 text-xl font-semibold text-white">{area.name}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink-400">{area.description}</p>
                 </div>
-                <span className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-accent-bright">
+                <span className="mt-8 inline-flex items-center gap-1.5 text-sm font-medium text-white">
                   {area.cta}
                   <span className="transition-transform duration-150 group-hover:translate-x-0.5" aria-hidden="true">→</span>
                 </span>
@@ -138,9 +138,9 @@ export default function HomePage() {
                 ))}
               </div>
               <div className="mt-9 flex flex-wrap items-center gap-2.5">
-                <Badge tone="good">Your keys stay with you</Badge>
-                <Badge tone="good">9orb cannot move your assets</Badge>
-                <Badge tone="good">No seed custody</Badge>
+                <Badge>Your keys stay with you</Badge>
+                <Badge>9orb cannot move your assets</Badge>
+                <Badge>No seed custody</Badge>
               </div>
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Button href="/protect">Explore Protect</Button>
@@ -262,7 +262,7 @@ export default function HomePage() {
       <section className="border-b border-base-800 py-20">
         <Container>
           <div className="mx-auto max-w-2xl text-center">
-            <span className="text-xs font-medium uppercase tracking-widest text-accent-bright">Research</span>
+            <span className="text-xs font-medium uppercase tracking-widest text-ink-500">Research</span>
             <h2 className="mt-3 text-3xl font-semibold text-white">Research through participation.</h2>
             <p className="mt-4 text-sm leading-relaxed text-ink-400">
               9orb conducts proprietary research into digital-asset markets and network behavior,

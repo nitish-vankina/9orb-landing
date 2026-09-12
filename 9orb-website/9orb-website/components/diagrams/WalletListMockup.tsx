@@ -6,7 +6,7 @@ const WALLETS = [
 
 export function WalletListMockup() {
   return (
-    <div className="overflow-hidden rounded-xl border border-base-700 bg-base-900 shadow-2xl shadow-black/40">
+    <div className="overflow-hidden rounded-xl border border-base-700 bg-base-900">
       <div className="flex items-center justify-between border-b border-base-800 px-5 py-3.5">
         <span className="text-sm font-medium text-white">Connected wallets</span>
         <span className="text-xs text-ink-500">Read-only</span>

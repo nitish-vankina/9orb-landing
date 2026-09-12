@@ -12,7 +12,7 @@ export function NetworkBadges({ className = "" }: { className?: string }) {
           key={n.symbol}
           className="flex items-center gap-2 rounded-md border border-base-700 bg-base-900/60 px-3 py-1.5 text-sm text-ink-200"
         >
-          <span className="font-mono text-xs text-accent-bright">{n.symbol}</span>
+          <span className="font-mono text-xs text-white">{n.symbol}</span>
           <span className="text-ink-400">{n.name}</span>
         </div>
       ))}

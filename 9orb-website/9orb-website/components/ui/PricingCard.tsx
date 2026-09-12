@@ -26,14 +26,14 @@ export function PricingCard({
     <div
       className={`flex flex-col rounded-lg border p-6 ${
         highlighted
-          ? "border-accent/50 bg-accent-soft/30"
+          ? "border-ink-100/60 bg-base-800"
           : "border-base-800 bg-base-900/40"
       }`}
     >
       <div className="flex items-center justify-between">
         <h3 className="text-sm font-medium text-white">{name}</h3>
         {highlighted ? (
-          <span className="rounded-full border border-accent/40 bg-accent-soft px-2 py-0.5 text-[11px] font-medium text-accent-bright">
+          <span className="rounded-full border border-base-600 bg-white px-2 py-0.5 text-[11px] font-medium text-base-950">
             Most capability
           </span>
         ) : null}
@@ -47,7 +47,7 @@ export function PricingCard({
         {features.map((f, i) => (
           <li key={i} className="flex items-start gap-2 text-sm text-ink-200">
             <svg
-              className="mt-0.5 h-4 w-4 shrink-0 text-accent-bright"
+              className="mt-0.5 h-4 w-4 shrink-0 text-ink-400"
               viewBox="0 0 20 20"
               fill="none"
               aria-hidden="true"

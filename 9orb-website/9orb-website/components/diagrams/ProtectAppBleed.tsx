@@ -11,7 +11,7 @@ export function ProtectAppBleed() {
           {/* Sidebar */}
           <div className="hidden w-56 shrink-0 border-r border-base-800 bg-base-850 px-4 py-5 sm:block">
             <div className="flex items-center gap-2 text-sm font-medium text-white">
-              <span className="flex h-5 w-5 items-center justify-center rounded-[5px] border border-base-600 font-mono text-[10px] text-accent-bright">
+              <span className="flex h-5 w-5 items-center justify-center rounded-[5px] border border-base-600 font-mono text-[10px] text-white">
                 9
               </span>
               9orb
@@ -36,18 +36,18 @@ export function ProtectAppBleed() {
           {/* Main pane */}
           <div className="min-w-0 flex-1">
             <div className="flex items-center gap-3 border-b border-base-800 px-5 py-3.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-signal-warn" />
+              <span className="h-1.5 w-1.5 rounded-full bg-white" />
               <span className="font-mono text-xs text-ink-500">PRT-2291</span>
               <span className="text-sm text-white">Unlimited approval detected on wallet 0x8f2…4c1</span>
               <span className="ml-auto text-xs text-ink-500">2 / 3</span>
             </div>
             <div className="divide-y divide-base-800/70">
               {[
-                { label: "Recovery Readiness", value: "92 / 100", tone: "text-signal-good" },
-                { label: "Backup Health", value: "Verified", tone: "text-signal-good" },
-                { label: "Guardian Health", value: "Not configured", tone: "text-ink-400" },
-                { label: "Drill Health", value: "Verified 12d ago", tone: "text-signal-good" },
-                { label: "Sovereign Recovery Kit", value: "Current", tone: "text-signal-good" },
+                { label: "Recovery Readiness", value: "92 / 100", tone: "text-white" },
+                { label: "Backup Health", value: "Verified", tone: "text-white" },
+                { label: "Guardian Health", value: "Not configured", tone: "text-ink-500" },
+                { label: "Drill Health", value: "Verified 12d ago", tone: "text-white" },
+                { label: "Sovereign Recovery Kit", value: "Current", tone: "text-white" },
               ].map((row) => (
                 <div key={row.label} className="flex items-center justify-between px-5 py-3.5">
                   <span className="text-sm text-ink-300">{row.label}</span>

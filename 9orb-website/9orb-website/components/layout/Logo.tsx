@@ -8,7 +8,7 @@ export function Logo({ className = "" }: { className?: string }) {
       aria-label="9orb home"
     >
       <span
-        className="flex h-6 w-6 items-center justify-center rounded-[6px] border border-base-600 bg-base-900 font-mono text-[11px] text-accent-bright"
+        className="flex h-6 w-6 items-center justify-center rounded-[6px] bg-white font-mono text-[11px] font-semibold text-base-950"
         aria-hidden="true"
       >
         9

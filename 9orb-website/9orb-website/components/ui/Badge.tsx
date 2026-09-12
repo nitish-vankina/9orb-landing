@@ -2,15 +2,15 @@ import { ReactNode } from "react";
 
 export function Badge({
   children,
-  tone = "neutral",
+  tone = "outline",
 }: {
   children: ReactNode;
-  tone?: "neutral" | "good" | "accent";
+  /** solid = white fill, black text. outline = bordered, gray text. */
+  tone?: "outline" | "solid";
 }) {
   const toneClasses = {
-    neutral: "border-base-600 text-ink-300",
-    good: "border-signal-good/30 text-signal-good bg-signal-good/10",
-    accent: "border-accent/30 text-accent-bright bg-accent-soft",
+    outline: "border-base-600 text-ink-300",
+    solid: "border-transparent bg-white text-base-950",
   } as const;
 
   return (

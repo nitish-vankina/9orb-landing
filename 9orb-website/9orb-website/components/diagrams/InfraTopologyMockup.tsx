@@ -10,7 +10,7 @@ const CHAINS = [
  */
 export function InfraTopologyMockup() {
   return (
-    <div className="overflow-hidden rounded-xl border border-base-700 bg-base-900 shadow-2xl shadow-black/40">
+    <div className="overflow-hidden rounded-xl border border-base-700 bg-base-900">
       <div className="flex items-center justify-between border-b border-base-800 px-5 py-3.5">
         <span className="text-sm font-medium text-white">Network connectivity</span>
         <span className="font-mono text-xs text-ink-500">internal</span>
@@ -25,7 +25,7 @@ export function InfraTopologyMockup() {
               <span className="text-sm text-ink-200">{c.name}</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-signal-good animate-pulse-soft" />
+              <span className="h-1.5 w-1.5 rounded-full bg-white animate-pulse-soft" />
               <span className="text-xs text-ink-500">Connected</span>
             </div>
           </li>

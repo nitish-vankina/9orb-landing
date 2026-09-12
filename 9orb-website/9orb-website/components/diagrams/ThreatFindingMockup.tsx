@@ -22,17 +22,18 @@ export function ThreatFindingMockup() {
     },
   ];
 
+  // Monochrome only: a filled marker means "needs attention", a hollow
+  // marker means "clear". No color carries meaning here.
   const toneMap = {
-    warn: { dot: "bg-signal-warn", label: "Needs review" },
-    good: { dot: "bg-signal-good", label: "Clear" },
-    bad: { dot: "bg-signal-bad", label: "Critical" },
+    warn: { filled: true, label: "Needs review" },
+    good: { filled: false, label: "Clear" },
   } as const;
 
   return (
-    <div className="overflow-hidden rounded-xl border border-base-700 bg-base-900 shadow-2xl shadow-black/40">
+    <div className="overflow-hidden rounded-xl border border-base-700 bg-base-900">
       <div className="flex items-center justify-between border-b border-base-800 px-5 py-3.5">
         <span className="text-sm font-medium text-white">Threat findings</span>
-        <Badge tone="accent">High-confidence only</Badge>
+        <Badge>High-confidence only</Badge>
       </div>
       <ul className="divide-y divide-base-800">
         {findings.map((f, i) => (
@@ -42,7 +43,11 @@ export function ThreatFindingMockup() {
             </span>
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-2">
-                <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${toneMap[f.severity].dot}`} />
+                <span
+                  className={`h-1.5 w-1.5 shrink-0 rounded-full ${
+                    toneMap[f.severity].filled ? "bg-white" : "border border-base-500"
+                  }`}
+                />
                 <p className="truncate text-sm text-white">{f.title}</p>
               </div>
               <p className="mt-1 text-xs leading-relaxed text-ink-500">{f.detail}</p>

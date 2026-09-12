@@ -55,7 +55,7 @@ export default function PrivacyPage() {
               <h2 className="text-lg font-medium text-white">Contact</h2>
               <p className="mt-2">
                 Privacy questions can be sent to{" "}
-                <a href={`mailto:${siteConfig.generalContactEmail}`} className="text-accent-bright hover:underline">
+                <a href={`mailto:${siteConfig.generalContactEmail}`} className="text-white hover:underline">
                   {siteConfig.generalContactEmail}
                 </a>
                 .

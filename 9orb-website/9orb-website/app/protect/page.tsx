@@ -229,10 +229,10 @@ export default function ProtectPage() {
             <SovereignBoundaryDiagram />
           </div>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-2.5">
-            <Badge tone="good">No seed custody</Badge>
-            <Badge tone="good">No private-key custody</Badge>
-            <Badge tone="good">No employee override</Badge>
-            <Badge tone="good">No automatic fund movement</Badge>
+            <Badge>No seed custody</Badge>
+            <Badge>No private-key custody</Badge>
+            <Badge>No employee override</Badge>
+            <Badge>No automatic fund movement</Badge>
           </div>
           <div className="mt-10 text-center">
             <Button href="/security" variant="secondary">Read the full security model</Button>
